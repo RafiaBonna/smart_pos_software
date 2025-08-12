@@ -196,7 +196,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    &copy; 2025 MyPOS Software. All rights reserved. Developed by Rafia Hawlader Bonna
+    DREAM POS Software  2025 . <br> All rights reserved & Developed by Rafia Hawlader Bonna
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

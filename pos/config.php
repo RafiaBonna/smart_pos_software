@@ -6,7 +6,7 @@
 
     $password = "";
 
-    $dbname = "auth-one"; 
+    $dbname = "dream_pos"; 
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 

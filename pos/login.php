@@ -1,4 +1,20 @@
 
+<?php
+include("config.php");
+if(isset($_POST['submit'])){
+  $email=$_POST['mail'];
+  $password=$_POST['word'];
+  $sql="INSERT INTO 'users' ('mail','word') VALUES ('$email','$password')";
+  $result =$conn->query($sql);
+  if($result ==TRUE){
+    echo "New record created successfully";
+  } else{
+    echo "Failed to create new record.";
+  }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +43,7 @@
 
       <form action="home.php" method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" name="mail" placeholder="Email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -35,7 +51,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" name="word" placeholder="Password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
