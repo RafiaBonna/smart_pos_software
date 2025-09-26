@@ -1,25 +1,19 @@
-<footer class="main-footer">
+<footer class="main-footer bg-dark text-center">
     <div class="float-right d-none d-sm-block">
-   
     </div>
-    <strong>Copyright &copy; 2025 DREAM POS </strong> All rights reserved by Rafia Hawlader Bonna.
-  </footer>
+    <strong>Copyright &copy; 2025 <b>DREAM POS</b>.</strong> All rights reserved by <b> Rafia Hawlader </b>.
+</footer>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
+<aside class="control-sidebar control-sidebar-dark"></aside>
 </div>
-<!-- ./wrapper -->
 
-<!-- jQuery -->
 <script src="dist/plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
 <script src="dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/dist/js/demo.js"></script>
+<script src="dist/plugins/select2/js/select2.full.min.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+<script src="dist/js/demo.js"></script>
+
+<script src="dist/js/create_sale_script.js"></script> 
+
 </body>
 </html>

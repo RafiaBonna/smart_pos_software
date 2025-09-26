@@ -6,7 +6,7 @@
 
     $password = "";
 
-    $dbname = "dream_pos"; 
+    $dbname = "project_pos"; 
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
