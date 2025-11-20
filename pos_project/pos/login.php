@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </style>
 
 </head>
-<body class="hold-transition login-page dark-mode">
+<body class="hold-transition login-page light-mode">
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">

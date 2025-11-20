@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 
-// Define a base path constant for easier includes
+// Define base include path
 define('BASE_PATH', __DIR__ . '/include/');
 ?>
 <!DOCTYPE html>
@@ -17,42 +17,49 @@ define('BASE_PATH', __DIR__ . '/include/');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dashboard</title>
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="dist/plugins/fontawesome-free/css/all.min.css">
+
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/dist/css/adminlte.min.css">
+
+    <!-- Date Range Picker -->
     <link rel="stylesheet" href="dist/plugins/daterangepicker/daterangepicker.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
+
+    <!-- Header + Navbar + Sidebar -->
     <?php
-    include(BASE_PATH . 'header.php');
-    include(BASE_PATH . 'nav.php');
-    include(BASE_PATH . 'sidebar.php');
+        include BASE_PATH . 'header.php';
+        include BASE_PATH . 'nav.php';
+        include BASE_PATH . 'sidebar.php';
     ?>
 
-    <!-- Content Wrapper. Contains page content -->
+    <!-- Content Wrapper -->
     <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+
+        <!-- Page Header -->
         <section class="content-header">
-            <div class="container-fluid">
-                <!-- No changes here -->
-            </div>
+            <div class="container-fluid"></div>
         </section>
 
-        <!-- Main content -->
+        <!-- Main Content -->
         <section class="content">
             <div class="container-fluid">
-                <!-- The dynamic content (including dashboard) will be loaded here -->
-                <?php include("placholder.php"); ?>
+                <?php include "placholder.php"; ?>
             </div>
         </section>
     </div>
-    <!-- /.content-wrapper -->
 
-    <?php include(BASE_PATH . 'footer.php'); ?>
+    <!-- Footer -->
+    <?php include BASE_PATH . 'footer.php'; ?>
+
 </div>
 <!-- ./wrapper -->
 
@@ -60,13 +67,17 @@ define('BASE_PATH', __DIR__ . '/include/');
 <script src="dist/plugins/jquery/jquery.min.js"></script>
 <script src="dist/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="dist/dist/js/adminlte.min.js"></script>
-<script src="dist/plugins/daterangepicker/daterangepicker.js"></script>
+
+<!-- Moment + Date Range Picker -->
 <script src="dist/plugins/moment/moment.min.js"></script>
-<script src="dist/plugins/chart.js/Chart.min.js"></script> <script>
+<script src="dist/plugins/daterangepicker/daterangepicker.js"></script>
+
+<!-- Chart.js -->
+<script src="dist/plugins/chart.js/Chart.min.js"></script>
+
+<!-- Custom scripts -->
 <script src="dist/dist/js/demo.js"></script>
 <script src="dist/dist/js/salescript.js"></script>
-<script>
-    // Custom script
-</script>
+
 </body>
 </html>
