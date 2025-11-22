@@ -152,7 +152,7 @@ if ($result_recent_sales && $result_recent_sales->num_rows > 0) {
     <section class="col-lg-7 connectedSortable">
         <div class="card card-info">
             <div class="card-header">
-                <h3 class="card-title">Last 7 Days Sales</h3>
+                <h3 class="card-title">Last 7 Days Sale</h3>
             </div>
             <div class="card-body">
                 <canvas id="barChart"></canvas>
