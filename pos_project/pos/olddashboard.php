@@ -131,7 +131,7 @@ if ($result_recent_sales && $result_recent_sales->num_rows > 0) {
         <div class="small-box bg-warning">
             <div class="inner">
                 <h3><?php echo htmlspecialchars($total_products); ?></h3>
-                <p>Total Products</p>
+                <p>Total Product</p>
             </div>
         </div>
     </div>
