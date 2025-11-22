@@ -201,7 +201,7 @@ if ($result_recent_sales && $result_recent_sales->num_rows > 0) {
                                 </tr>
                             <?php endforeach; ?>
                         <?php else: ?>
-                            <tr><td colspan="4" class="text-center">No recent sales found.</td></tr>
+                            <tr><td colspan="4" class="text-center">No recent sale found.</td></tr>
                         <?php endif; ?>
                     </tbody>
                 </table>
