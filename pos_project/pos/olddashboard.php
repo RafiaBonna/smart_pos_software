@@ -163,7 +163,7 @@ if ($result_recent_sales && $result_recent_sales->num_rows > 0) {
     <section class="col-lg-5 connectedSortable">
         <div class="card card-danger">
             <div class="card-header">
-                <h3 class="card-title">Top Selling Products</h3>
+                <h3 class="card-title">Top Selling Product</h3>
             </div>
             <div class="card-body">
                 <canvas id="pieChart"></canvas>
