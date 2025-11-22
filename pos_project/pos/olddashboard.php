@@ -178,7 +178,7 @@ if ($result_recent_sales && $result_recent_sales->num_rows > 0) {
     <section class="col-lg-12">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Recent Sale</h3>
+                <h3 class="card-title">Recent Sales</h3>
             </div>
             <div class="card-body">
                 <table class="table table-bordered table-striped">
