@@ -140,7 +140,7 @@ if ($result_recent_sales && $result_recent_sales->num_rows > 0) {
         <div class="small-box bg-danger">
             <div class="inner">
                 <h3><?php echo htmlspecialchars($out_of_stock_products); ?></h3>
-                <p>Low Stock</p>
+                <p>Low Stocks</p>
             </div>
         </div>
     </div>
