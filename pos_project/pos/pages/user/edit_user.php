@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['btnUpdate'])) {
         if ($stmt_update->execute()) {
             $message = "<div class='alert alert-success'>User updated successfully!</div>";
             // Re-fetch user data to display the updated information
-            header("Location: home.php?page=2");
+            // header("Location: home.php?page=2");
             exit;
         } else {
             $message = "<div class='alert alert-danger'>Error updating user: " . $stmt_update->error . "</div>";
