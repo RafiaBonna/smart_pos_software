@@ -9,7 +9,7 @@ $result = $conn->query($sql);
 
 <div class="container my-5">
     <h3>Manage Categories</h3>
-    <a href="home.php?page=4" class="btn btn-success mb-3">Add New Category</a>
+    <a href="home.php?page=7" class="btn btn-success mb-3">Add New Category</a>
     <table class="table table-bordered table-striped">
         <thead>
             <tr>

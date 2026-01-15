@@ -140,7 +140,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="dist/index2.html" class="h1"><b>DREAM</b>POS</a>
         </div>
         <div class="card-body">
-            <p class="login-box-msg"><b>Sign in to start your session</b></p>
+            <p style="
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 15px 0;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+">
+    <i class="fas fa-user-shield" style="font-size: 28px; color: #000000;"></i> 
+    <span style="border-bottom: 2px solid #000000; padding-bottom: 2px;">
+        Welcome Admin
+    </span>
+</p>
 
             <?php if ($error): ?>
                 <div class="alert alert-danger"><?php echo $error; ?></div>
@@ -176,12 +194,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </form>
 
-            <p class="mb-1">
-                <a href="forgot-password.html">I forgot my password</a>
-            </p>
-            <p class="mb-0">
-                <a href="register.html" class="text-center">Register a new membership</a>
-            </p>
+         
         </div>
     </div>
 </div>

@@ -123,13 +123,17 @@ $result = $conn->query($sql);
                                             </form>
                                             
                                             <!-- Move to Expired Form -->
-                                            <form method="post" action="pages/expired_products/move_to_expired.php">
-                                                <input type="hidden" name="stock_id" value="<?= htmlspecialchars($row['id']) ?>">
-                                                <input type="hidden" name="quantity" value="<?= htmlspecialchars($row['quantity']) ?>">
-                                                <input type="hidden" name="expiry_date" value="<?= htmlspecialchars($row['expiry_date']) ?>">
-                                                <button type="submit" name="move_to_expired" class="btn btn-sm btn-warning">Move to Expired</button>
-                                            </form>
-
+                                           <form method="post" action="home.php?page=25" class="d-flex align-items-center">
+    <input type="hidden" name="stock_id" value="<?= htmlspecialchars($row['id']) ?>">
+    <input type="hidden" name="expiry_date" value="<?= htmlspecialchars($row['expiry_date']) ?>">
+    
+    <input type="number" name="expired_qty" class="form-control form-control-sm mr-2" 
+           placeholder="Qty" style="width: 70px;" max="<?= $row['quantity'] ?>" min="1" required>
+    
+    <button type="submit" name="move_to_expired" class="btn btn-sm btn-warning">
+        <i class="fas fa-arrow-right"></i> Move
+    </button>
+</form>
                                         </div>
                                     </td>
                                 </tr>

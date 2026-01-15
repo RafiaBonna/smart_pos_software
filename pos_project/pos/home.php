@@ -16,7 +16,7 @@ define('BASE_PATH', __DIR__ . '/include/');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard</title>
+    <title>DREAM POS</title>
 
     <!-- Google Font -->
     <link rel="stylesheet"
@@ -76,7 +76,7 @@ define('BASE_PATH', __DIR__ . '/include/');
 <script src="dist/plugins/chart.js/Chart.min.js"></script>
 
 <!-- Custom scripts -->
-<script src="dist/dist/js/demo.js"></script>
+<!-- <script src="dist/dist/js/demo.js"></script> -->
 <script src="dist/dist/js/salescript.js"></script>
 
 </body>
